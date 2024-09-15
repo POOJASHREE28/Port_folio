@@ -1,0 +1,76 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+  display: flex; /* Enable flexbox to align items */
+  justify-content: space-between; /* Push content to sides */
+  align-items: center; /* Center content vertically */
+}
+
+.introContent {
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  max-width: 60%; /* Limit the width of the text content */
+  opacity: 1;
+  animation: slideInLeft 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: yellow;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.bg {
+  width: 30%; /* Keep the width as 30% of the container */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+  opacity: 1;
+  transition: opacity 1s ease;
+  z-index: 0;
+  position: relative; /* Keep it positioned within its flex container */
+  transform: translateY(-20%) translateX(-20%); /* Move the image up and left */
+}
+
+
+
+
+
+@media screen and (max-width: 400px) {
+  .bg {
+      width: 50%; /* Make the image smaller on small screens */
+      transform: translateY(-10%) translateX(-10%);
+  }
+  .introContent {
+      font-size: 10vw;
+  }
+  .hello {
+      font-size: 4.5vw;
+  }
+}

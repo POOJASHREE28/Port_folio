@@ -1,0 +1,58 @@
+.project-container {
+  max-width: 1200px; /* Increased width for better layout */
+  margin: 0 auto;
+  padding: 50px 20px; /* Added padding for better overall spacing */
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows projects to wrap on smaller screens */
+}
+
+.project {
+  background-color:  rgb(30,30,30);
+  border-radius: 10px;
+  border: 2px solid rgb(30,30,30);
+  width: calc(33.333% - 20px); /* 3 projects per row, adjust as needed */
+  margin: 10px; /* Add margin to each project to create space between them */
+  overflow: hidden; /* Ensure content stays within box */
+}
+.projects-heading {
+  margin-top: 30px; 
+  text-align: center; 
+  margin-bottom: 50px; 
+  font-size: 25px;
+  font-weight: 500;
+}
+.description{
+  color: grey;
+}
+.project-image {
+  width: 100%;
+  height: 200px; /* Adjust height to make it rectangular */
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-title1 {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(236, 235, 233);
+  margin-bottom: 5px; /* Small gap between title and description */
+}
+
+.project-content p {
+  margin: 0; /* Remove margin from paragraph for tight spacing */
+  font-size: 14px;
+  color: #ddd;
+}
+
+.project-image-inner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

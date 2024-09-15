@@ -1,0 +1,44 @@
+.navbar{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d4d4d;
+    padding-left: 20px;
+  }
+  
+  /* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  
+
+
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+}
+.desktopMenuListItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem ;
+    border-bottom: 3px solid yellow;
+}
+.desktopMenu{
+    font-size: 20px;
+    font-family: sans-serif;
+}
