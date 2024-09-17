@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Outlet, } from 'react-router-dom';
+// import { Outlet, } from 'react-router-dom';
+import './style.css'
 import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Intro/intro';
 import About from './components/About/about';
@@ -38,7 +39,7 @@ function App() {
           <ContactMe />
         </section>
       </main>
-      <Outlet /> {/* Outlet for potential nested routes */}
+      {/* <Outlet /> Outlet for potential nested routes */}
       <Footer />
     </div>
   );

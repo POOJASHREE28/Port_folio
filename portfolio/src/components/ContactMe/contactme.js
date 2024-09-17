@@ -23,8 +23,6 @@ function ContactMe() {
   return (
     <section id="contactMe">
       <h1 className="contact-header">Contact Me</h1>
-      
-     
         <div className="contactContent">
           <div className="row">
             <div className="heading">Get in touch</div>

@@ -1,0 +1,27 @@
+/* Ensure proper layout for the footer */
+.footer {
+    position: fixed;
+    bottom: 0; /* Ensure the footer is at the bottom */
+    background: rgb(30, 30, 30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    z-index: 3;
+    text-align: center;
+  }
+  
+  /* Ensure #contactMe adjusts height to avoid overlap with footer */
+  #contactMe {
+    height: calc(100vh - 5rem); /* Correct calculation for height */
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 1rem; /* Add padding to prevent overlap with the footer */
+  }
+  
